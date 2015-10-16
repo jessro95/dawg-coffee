@@ -1,1 +1,191 @@
 /* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,300italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+body
+{
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300px;
+	background-color: #E9EAEE;	
+	fill:#BC6026;
+
+}
+
+h2 {
+	color: #BC6026;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Raleway,"Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+/*navigation top*/
+nav svg{
+	height: 1em;
+}
+
+nav:default{
+	position: fixed;
+	display: inline;
+	
+}
+nav{
+	padding-bottom: 0.5em;
+	background-color: #181C22;
+
+}
+nav a{
+	color:white;
+	fill:white;
+	font-size: 16px;
+	margin-left: 15px;
+	font-variant: small-caps;
+	padding: 0.5em;
+
+
+}
+
+#Header{
+	padding-top: 3em;
+
+}
+
+#motto{
+	display: none;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #D87E28;
+	fill:#D87E28;
+}
+
+#Headline{
+	font-style: italic;
+
+}
+#Headline svg{
+	display: none;
+}
+
+#information svg{
+	height: 1.5em;
+	margin: 1em;
+}
+#information{
+	background-color: #dbdce3;
+
+}
+#information img{
+	border-radius: 5px;
+}
+
+
+#menu dd{
+	font-style: italic;
+	padding-left: 1em;
+}
+
+#story{
+	background-color: #dbdce3;
+}
+#story img{
+	float: right;
+	max-height: 300px;
+	margin-left: 1em;
+	border-radius: 5px;
+	display: inline;
+}
+
+#footer{
+	padding-top:1em;
+	border-color: #D87E28;
+	border-top-style: solid;
+	background-color: #afb3c2;
+	font-size: 12px;
+	clear: both;
+}
+
+@media (min-width: 768px){
+	body {
+		font-size: 20px;
+	}
+
+	h2{
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	nav{
+		background-color: rgba(24, 28, 34, 0.8);
+		padding-left: 1em;
+		padding-right: 1em;
+
+
+	}
+
+	#Header{
+		background-image:url(../img/background-sm.jpg); 
+		background-repeat:no-repeat;
+		min-height: 550px;
+		margin: 0px;
+		color: white;
+		text-align: right;
+
+	}
+
+	#motto{
+		display: block;
+	}
+
+	#Headline{
+		font-size: 1.25em;
+		text-align: center;
+		padding-bottom: 3em;
+		padding-top: 3em;
+	}
+
+
+	#Headline svg{
+		display:block;
+		height: 1.5em;
+		margin-bottom:1em; 
+		fill:#BC6026;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#story img{
+		max-height: 400px;
+
+	}
+	#comingsoon{
+		padding-left: 3.5em;
+	}
+}
+
+
+
+@media (min-width: 992px){
+	#Header{
+		background-image:url(../img/background-md.jpg); 
+	}
+
+	h1{
+		font-size: 4em;
+
+	}
+}
+
+@media (min-width: 1200px){
+	#Header{
+		background-image:url(../img/background-lg.jpg); 
+	}
+}
+
